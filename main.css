@@ -1,0 +1,91 @@
+body {
+    font-family: 'Exo2ExtraBoldItalic';
+    background: url('../assets/background-image.jpg') center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: none;
+  
+}
+@font-face {
+    font-family: 'Exo2ExtraBoldItalic';
+    src: url('/assets/Exo2ExtraBoldItalic-gaD6.ttf')  format('truetype');
+}
+
+  .container2{
+    font-size: 15rem;
+    text-align: center;
+    color: rgb(67, 105, 177);
+    text-decoration: dotted;
+    animation: flow 4s ease-in-out infinite;
+    background: linear-gradient(-60deg,#3851e0,#904e95,#e73e7e,#ee7752);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    
+  }
+  @keyframes flow {
+    0% {
+        background-position: 0 50%;
+    } 
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+  
+  .yellow-container,.white-container,.deeprose-container,.redblack-container,.blue-container {
+    font-size: 1rem;
+    font-family: arial;
+    border: 5px solid yellow;
+    margin: 30px 200px;
+  }
+  
+  .yellow-container h1,.white-container h1,.deeprose-container h1,.redblack-container h1,.blue-container h1 {
+    text-align: center;
+  }
+  
+  .white-container {
+    font-size: 1rem;
+    font-family: arial;
+    border: 5px solid rgb(231, 217, 217);
+  }
+  .deeprose-container {
+    font-size: 1rem;
+    font-family: arial;
+    border: 5px solid rgb(153, 31, 92);
+  }
+  .redblack-container {
+    font-size: 1rem;
+    font-family: arial;
+    border: 5px solid rgb(31, 6, 18);
+  }
+  .blue-container {
+    font-size: 1rem;
+    font-family: arial;
+    border: 5px solid rgb(41, 101, 214);
+  }
+  
+  .image-container.active {
+    margin: 10px 60px;
+    display: inline-flex;
+  }
+  
+  .image-inner-container {
+    display: block !important;
+  }
+  
+  .image,.color-name,.image-description {
+    display: none;
+  }
+  
+  .image.active,.color-name.active,.image-description.active {
+    display: block;
+  }
